@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middle-earth Explorer | Lord of the Rings Universe</title>
+    <meta name="description" content="Explore every book, movie, and character from the Lord of the Rings universe. A beautiful offline-ready encyclopedia powered by The One API.">
+    <meta name="keywords" content="Lord of the Rings, LOTR, Middle-earth, characters, movies, books, Tolkien, API explorer">
+    <meta name="author" content="Middle-earth Explorer">
+    <meta property="og:title" content="Middle-earth Explorer | Lord of the Rings Universe">
+    <meta property="og:description" content="Explore every book, movie, and character from the Lord of the Rings universe.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated background particles -->
+    <div class="bg-particles" id="bg-particles"></div>
+    <div class="background-overlay"></div>
+
+    <!-- Hero Header -->
+    <header class="header" id="top">
+        <div class="header-inner">
+            <div class="ring-glow"></div>
+            <p class="pre-title">The One API · Middle-earth Encyclopedia</p>
+            <h1 class="title">Middle-earth Explorer</h1>
+            <p class="subtitle">One ring to find them all</p>
+            <div class="header-stats" id="header-stats">
+                <div class="stat-pill"><span id="stat-books">—</span> Books</div>
+                <div class="stat-pill"><span id="stat-movies">—</span> Movies</div>
+                <div class="stat-pill"><span id="stat-chars">—</span> Characters</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Navigation Tabs -->
+        <nav class="tabs" role="tablist" aria-label="Content sections">
+            <button class="tab active" data-target="books" role="tab" aria-selected="true" aria-controls="books" id="tab-books">
+                <span class="tab-icon">📖</span> Books
+            </button>
+            <button class="tab" data-target="movies" role="tab" aria-selected="false" aria-controls="movies" id="tab-movies">
+                <span class="tab-icon">🎬</span> Movies
+            </button>
+            <button class="tab" data-target="characters" role="tab" aria-selected="false" aria-controls="characters" id="tab-characters">
+                <span class="tab-icon">⚔️</span> Characters
+            </button>
+        </nav>
+
+        <!-- Loading State -->
+        <div id="loading" class="loading hidden" aria-live="polite" aria-label="Loading">
+            <div class="ring-spinner">
+                <div class="ring"></div>
+                <div class="ring-center">💍</div>
+            </div>
+            <p class="loading-text">Forging data in the fires of Mount Doom...</p>
+        </div>
+
+        <!-- Books Tab -->
+        <section id="books" class="tab-content active" role="tabpanel" aria-labelledby="tab-books">
+            <div class="section-header">
+                <h2 class="section-title">The Sacred Texts</h2>
+                <p class="section-desc">The original trilogy by J.R.R. Tolkien — the foundation of Middle-earth.</p>
+            </div>
+            <div class="grid books-grid" id="books-grid"></div>
+        </section>
+
+        <!-- Movies Tab -->
+        <section id="movies" class="tab-content" role="tabpanel" aria-labelledby="tab-movies">
+            <div class="section-header">
+                <h2 class="section-title">The Cinematic Saga</h2>
+                <p class="section-desc">Peter Jackson's legendary film adaptations and their legacy.</p>
+            </div>
+            <div class="grid" id="movies-grid"></div>
+        </section>
+
+        <!-- Characters Tab -->
+        <section id="characters" class="tab-content" role="tabpanel" aria-labelledby="tab-characters">
+            <div class="section-header">
+                <h2 class="section-title">The Fellowship & Beyond</h2>
+                <p class="section-desc">Every soul that walked the paths of Middle-earth.</p>
+            </div>
+            <div class="search-bar" id="char-search">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input 
+                        type="text" 
+                        id="character-search-input" 
+                        placeholder="Search by name (e.g. Aragorn, Gandalf...)"
+                        autocomplete="off"
+                        aria-label="Search characters"
+                    >
+                    <button class="clear-btn hidden" id="clear-search" aria-label="Clear search">✕</button>
+                </div>
+                <p class="search-results-count hidden" id="search-count"></p>
+            </div>
+            <div class="grid" id="characters-grid"></div>
+            <div class="pagination hidden" id="char-pagination">
+                <button id="first-page" class="btn icon-btn" aria-label="First page" disabled>⟪</button>
+                <button id="prev-page" class="btn secondary" disabled>← Prev</button>
+                <span id="page-info" class="page-info">Page 1 of 1</span>
+                <button id="next-page" class="btn secondary">Next →</button>
+                <button id="last-page" class="btn icon-btn" aria-label="Last page">⟫</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-brand">Middle-earth Explorer</p>
+            <p class="footer-sub">
+                Data sourced from <a href="https://the-one-api.dev/" target="_blank" rel="noopener">The One API</a>
+                · All Tolkien content belongs to the Tolkien Estate
+            </p>
+            <p class="footer-credit">
+                Built with ❤️ by <strong>Param Sangani</strong> — <a href="https://the-one-api.dev" target="_blank" rel="noopener">Explore the source data</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
