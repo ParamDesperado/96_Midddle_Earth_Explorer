@@ -3,7 +3,7 @@
 **The most beautiful Lord of the Rings encyclopedia on the web.**
 Browse every book, movie, and character from Tolkien's universe — fully offline, no API key needed.
 
-[!(https://96-midddle-earth-explorer.vercel.app/)]
+[Live Demo(https://96-midddle-earth-explorer.vercel.app/)]
 
 ---
 
