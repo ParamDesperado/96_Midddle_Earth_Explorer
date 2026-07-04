@@ -1,13 +1,9 @@
-<div align="center">
-
-<img src="https://em-content.zobj.net/source/apple/354/ring_1f48d.png" width="80" alt="One Ring" />
-
 # 🏔️ Middle-earth Explorer
 
 **The most beautiful Lord of the Rings encyclopedia on the web.**
 Browse every book, movie, and character from Tolkien's universe — fully offline, no API key needed.
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-66fcf1?style=for-the-badge&labelColor=0b0c10)](https://your-website.com)
+[![Live Demo](https://96-midddle-earth-explorer.vercel.app/)
 [![Data Source](https://img.shields.io/badge/Data-The_One_API-45a29e?style=for-the-badge&labelColor=0b0c10)](https://the-one-api.dev)
 [![License](https://img.shields.io/badge/License-MIT-c8a84b?style=for-the-badge&labelColor=0b0c10)](LICENSE)
 
@@ -40,25 +36,7 @@ Browse every book, movie, and character from Tolkien's universe — fully offlin
 
 ---
 
-## 🚀 Running Locally
 
-This app reads local JSON files via `fetch()`. Because of browser security (CORS), you need to serve it from a local server — **not** just by opening the HTML file directly.
-
-**If you have Python** (usually pre-installed on Mac/Linux):
-
-```bash
-python -m http.server 8000
-```
-
-Then open **http://localhost:8000** in your browser.
-
-**If you have Node.js:**
-
-```bash
-npx serve .
-```
-
----
 
 ## 📁 Project Structure
 
@@ -81,17 +59,7 @@ npx serve .
 
 ### Built by **Param Sangani**
 
-### 🌐 Check out my portfolio & other projects:
-
-## **[→ your-website.com ←](https://your-website.com)**
-
-*I build premium web tools, games, and data projects.*
-*If you like this project, visit my site — there's more where this came from.*
-
-</div>
-
 ---
-
 ## 📜 Credits & Attribution
 
 - **Story & Characters**: © J.R.R. Tolkien / The Tolkien Estate
@@ -99,7 +67,3 @@ npx serve .
 - **API Data**: [The One API](https://the-one-api.dev/) by [gitHub/gitfrosh](https://github.com/gitfrosh)
 
 ---
-
-<div align="center">
-<sub>Built with ❤️ and a healthy obsession with Middle-earth</sub>
-</div>
