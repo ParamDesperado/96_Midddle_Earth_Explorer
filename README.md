@@ -4,10 +4,6 @@
 Browse every book, movie, and character from Tolkien's universe — fully offline, no API key needed.
 
 [![Live Demo](https://96-midddle-earth-explorer.vercel.app/)
-[![Data Source](https://img.shields.io/badge/Data-The_One_API-45a29e?style=for-the-badge&labelColor=0b0c10)](https://the-one-api.dev)
-[![License](https://img.shields.io/badge/License-MIT-c8a84b?style=for-the-badge&labelColor=0b0c10)](LICENSE)
-
-</div>
 
 ---
 
@@ -54,8 +50,6 @@ Browse every book, movie, and character from Tolkien's universe — fully offlin
 ---
 
 ## 👨‍💻 Built By
-
-<div align="center">
 
 ### Built by **Param Sangani**
 
